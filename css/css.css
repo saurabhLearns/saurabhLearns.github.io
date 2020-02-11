@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+
+}
+/*Hero div 1 styling starts*/
+#particles-js{
+    background-color: black;
+    background-image: url("me.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url("me.svg");
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Raleway;
+    background: white;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.hero-text-head{
+    font-size: 4vw;
+}
+
+.hero-text-text{
+    font-size: 3vw;
+}
+
+.socialicons{
+    position: absolute;
+    font-size: 2.7vw;
+    top: 80%;
+}
+.socialiconsin{
+    color: white;
+    padding: 15px;
+}
+
+.socialiconsvertical{
+    display:none
+}
+
+.resume{
+    bottom: 5%;
+    right: 5%;
+    position: absolute;
+    font-family: Raleway;
+    border-radius: 10px;
+}
+
+div.resume a:link, div.resume a:visited {
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    
+}
+
+div.resume a:hover, .div.resume a:active {
+    background-color: #bdc3c7;
+
+}
+.resumevertical{
+    display:none
+}
+
+
+ @media only screen and (max-width : 992px) {
+        .hero-text{
+            text-align: left;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-family: Raleway;
+            background: white;
+            padding: 2.5%;
+        }
+        .hero-text-head{
+            font-size: 5vw;
+        }
+        .hero-text-text{
+            font-size: 4vw;
+        }
+        .socialicons{
+            display: none;
+        }
+        .socialiconsvertical{
+            display:block;
+            position: absolute;
+            font-size: 5vw;
+            top: 70%; 
+            justify-content: center;
+            text-align: center;
+        }
+        .resume{
+            display: none;
+        }
+
+        .resumevertical{
+            font-size: 3vw;
+            margin: 3%;
+            display: block;
+            font-family: Raleway;
+        }
+        div.resumevertical a:link, div.resumevertical a:visited {
+            background-color: white;
+            color: black;
+            padding: 3% 5%;
+            text-align: center; 
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        div.resumevertical a:hover, .div.resumevertical a:active {
+            background-color: #bdc3c7;
+        }
+    }

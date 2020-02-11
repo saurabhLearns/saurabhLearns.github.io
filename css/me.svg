@@ -1,0 +1,101 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5000 5000">
+	<defs>
+		<filter id="sofGlow13">
+			<!-- Thicken out the original shape -->
+			<feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+			<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+			<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
+			<!-- Change the colour -->
+			<feFlood flood-color="#fff" result="glowColor" />
+			<!-- Color in the glows -->
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+			<!--	Layer the effects together -->
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="sofGlow2">
+			<!-- Thicken out the original shape -->
+			<feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+			<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+			<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
+			<!-- Change the colour -->
+			<feFlood flood-color="#fcc79f" result="glowColor" />
+			<!-- Color in the glows -->
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+			<!--	Layer the effects together -->
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="sofGlow4">
+			<!-- Thicken out the original shape -->
+			<feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+			<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+			<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
+			<!-- Change the colour -->
+			<feFlood flood-color="#b70005" result="glowColor" />
+			<!-- Color in the glows -->
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+			<!--	Layer the effects together -->
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="sofGlow5">
+			<!-- Thicken out the original shape -->
+			<feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+			<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+			<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
+			<!-- Change the colour -->
+			<feFlood flood-color="#5453ff" result="glowColor" />
+			<!-- Color in the glows -->
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+			<!--	Layer the effects together -->
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<style>
+			.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{
+				fill:none;
+				stroke-miterlimit:10;
+				stroke-width:10px;
+			}
+			.cls-1,.cls-3{
+				stroke:#fff;
+				filter:url(#sofGlow13);
+			}
+			.cls-2{
+				stroke:#fcc79f;
+				filter:url(#sofGlow2);
+
+			}
+			.cls-3{
+				stroke-linecap:round;
+			}
+			.cls-4{
+				stroke:#b70005;
+				filter:url(#sofGlow4);
+			}
+			.cls-5{
+				stroke:#5453ff;
+				filter:url(#sofGlow5);
+			}
+		</style>
+		
+	</defs>
+	<title>me</title>
+	<path class="cls-1" d="M754.88,4692.27l360.36-67c9.58,0,37-25,37-34.54L1305.14,3927"/> <!-- sub-kes -->
+	<path class="cls-2" fill="black" d="M580,4803.57c449-260.36,826.39-830.44,935.22-1797.32"/><!-- face -->
+	<path class="cls-1" d="M5,4115.94c77.58,3.15,166.23,17.07,215.63,31.44L9.36,4433.54"/><!-- minidadhi -->
+	<path class="cls-3" d="M0,4973.83c291.7,2.84,573.7-169,573.7-169-79.63-8.33-250.47-51.05-401.17-166.12C100.82,4584,37.18,4539.88,3,4491.57"/><!-- bakri -->
+	<path class="cls-1" d="M14,78.14C937.12,106.64,1189.54,697.66,1198.1,673c84.67-243.7,880.75-61.38,635.58,1628.14C1804,2506,1665.2,2612.09,1603.21,2747.58L1516.51,3007c-4.37-483.36-63.51-1272.17-421.71-1686.28C929.16,1129.22,275.71,1508.4,5,1555.81"/><!-- kes -->
+	<path class="cls-4" d="M3.95,2449.68c22.67-23.35,44.4-37.22,64.67-36.54,140.22,4.69,235.12,419.21,377,492.42,103.79,42,247.7,69.52,410.49,60.85,222.13-11.84,306.12-13.34,427.78-55,68.83-49.8,120.09-123.08,155.83-256.79,18.65-69.78,75-263.58,65.17-364.58-170.58-39.42-418.77-63.43-660.77-72.54-264.75-10-476.23,48.17-660,79.23-53.4-1.59-121.1-6.58-180.2-9.53m1404.31,259.62c-7.42,45.84-16.85,91.54-31.2,135.75-13.81,42.55-32,85.48-60.35,120.51-26.51,32.72-62.48,55.67-101.53,70.64-96.46,37-202.94,32.91-304.43,37.12-27.29,1.13-266.82-9-317.66-20.44-43.59-9.85-88.44-33.2-117.48-64.93-34.94-38.17-203.73-353.89-206.43-403-.16-2.86.08-13,1.66-16.8,8.44-20.33,28.65-35.63,49.25-43.38,93.82-35.29,305.16-94.63,566.14-88.63,229.72,5.28,410.64,49,478.12,75.94,34.24,13.65,50.34,46.62,53.81,82.74C1421.84,2470.5,1414.34,2509.19,1408.26,2546.77Z"/><!-- specs -->
+	<path class="cls-2" d="M1471.3,3276.9c-17.51,240.38-95.84,537.37,32.81,587.69,48.88,19.12,120.88,4.15,162.54-32.81,42.45-37.66,32.06-79.21,57-155.53,30-92,68.56-103.38,171.4-248.58,71.55-101,108.27-151.28,128.05-208.28,36.6-105.47,69.28-255.68-32-401.11-18.52-26.61-66.58-78.25-133.61-87.44C1680.5,2706.59,1504.88,2816,1471.3,3276.9Z"/><!-- kan -->
+	<path class="cls-5" d="M1655.7,2517,1494,2427.16A458.86,458.86,0,0,0,1504.88,2290l198.21,112.54Z"/><!-- specs dandi -->
+</svg>
