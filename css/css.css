@@ -30,8 +30,8 @@ body, html {
     color: black;
     font-family: Raleway;
     background: white;
-    padding: 3%;
-    border-radius: 10px;
+    padding: 4%;
+    border-radius: 7px;
 }
 
 .hero-text-head{
@@ -39,7 +39,7 @@ body, html {
 }
 
 .hero-text-text{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .socialicons{
@@ -61,7 +61,7 @@ body, html {
     right: 5%;
     position: absolute;
     font-family: Raleway;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 div.resume a:link, div.resume a:visited {
@@ -71,7 +71,7 @@ div.resume a:link, div.resume a:visited {
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 7px;
     
 }
 
@@ -94,13 +94,13 @@ div.resume a:hover, .div.resume a:active {
             color: black;
             font-family: Raleway;
             background: white;
-            padding: 2.5%;
+            padding: 4		%;
         }
         .hero-text-head{
-            font-size: 5vw;
+            font-size: 4vw;
         }
         .hero-text-text{
-            font-size: 4vw;
+            font-size: 3vw;
         }
         .socialicons{
             display: none;
@@ -119,14 +119,14 @@ div.resume a:hover, .div.resume a:active {
 
         .resumevertical{
             font-size: 3vw;
-            margin: 3%;
+            margin: 4%;
             display: block;
             font-family: Raleway;
         }
         div.resumevertical a:link, div.resumevertical a:visited {
             background-color: white;
             color: black;
-            padding: 3% 5%;
+            padding: 5% 7%;
             text-align: center; 
             text-decoration: none;
             display: inline-block;
