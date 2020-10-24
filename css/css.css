@@ -11,10 +11,10 @@ body, html {
 /*Hero div 1 styling starts*/
 #particles-js{
     background-color: black;
-    background-image: url("me.svg");
+    background-image: url("me_v2.svg");
     background-position: left center;
     background-repeat: no-repeat;
-    background-image: url("me.svg");
+    background-image: url("me_v2.svg");
     height: 100%;
     position: relative;
     justify-content: center;

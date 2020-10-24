@@ -1,0 +1,32 @@
+<svg id="transp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+	<filter id="sofGlow">
+			<!-- Thicken out the original shape -->
+			<feMorphology operator="dilate" radius="0.1" in="SourceAlpha" result="thicken" />
+			<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+			<feGaussianBlur in="thicken" stdDeviation="4" result="blurred" />
+			<!-- Change the colour -->
+			<feFlood flood-color="#fff" result="glowColor" />
+			<!-- Color in the glows -->
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+			<!--	Layer the effects together -->
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<style>
+			.cls-1,
+			.cls-2,
+			.cls-3{fill:none;stroke-miterlimit:10;stroke-width:4px;filter:url(#sofGlow)}
+			.cls-1{stroke:#fff;}
+			.cls-2{stroke:#fff;}
+			.cls-3{stroke:#fff;}
+		</style>
+		<title>svg_temp</title>
+		<polyline class="cls-1" points="-0.02 808.26 9.56 808.1 19.13 806.01 10.67 828.69 -0.02 835.83"/>
+		<polyline class="cls-1" points="-0.02 852.13 31.18 870.59 63.48 870.79 53.33 879.58 -0.02 889.3"/>
+		<polygon class="cls-2" points="44.33 518.23 50.46 511.42 156.92 450.27 181.44 496.25 153.66 469.87 44.33 518.23"/>
+		<polyline class="cls-2" points="0.04 120.99 18.62 110.7 2 124.88 21.79 117.99 8.14 128.95 169.89 192.24 164.99 218.82 173.07 207.48 168.77 221.05 187.86 215.26 168.45 226.76 197.34 222.63 261 331.61 253.78 328.23 214.22 516.27 194.61 513.85 185.47 352.88 0.04 370.71"/>
+		<path class="cls-3" d="M0,551.22l8.57,3.89,51.12,64.42,65.19,3.53L192,613.14,213.41,524l-41.23-5-57-2.53L61.41,519,12.07,530.25l-12,.63m20.19,17.69,1.65-6.21L24,541l38.84-12.4,52.63-2.69L172,528.35l27.91,5.29-17,72.18-58.22,9L65,612.45,21.69,556.59Z"/>
+		<polyline class="cls-1" points="66.5 867.04 131 781 190.01 623.06"/>
+	</svg>
